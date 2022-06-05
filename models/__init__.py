@@ -1,4 +1,3 @@
-# Copyright (c) Shangqi Gao, Fudan University
 from .segmentation import build
 
 
