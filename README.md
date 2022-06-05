@@ -37,7 +37,6 @@ This code has been tested with
 Python 3.8.5  
 torch  1.7.0  
 torchvision 0.8.0  
-gco-wrapper (https://github.com/Borda/pyGCO)  
 
 
 
