@@ -60,7 +60,7 @@ def get_args_parser():
                         help='device to use for training / testing')
     parser.add_argument('--GPU_ids', type=str, default = '0', help = 'Ids of GPUs')    
     parser.add_argument('--seed', default=42, type=int)
-    parser.add_argument('--resume', default='/data/zhangke/MSCMR_EM_PU_resume/best_checkpoint.pth', help='resume from checkpoint')
+    parser.add_argument('--resume', default='', help='resume from checkpoint')
     parser.add_argument('--start_epoch', default=0, type=int, metavar='N',
                         help='start epoch')
     parser.add_argument('--eval', default = False, action='evaluate the model on TestSet')
