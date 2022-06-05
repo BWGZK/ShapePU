@@ -1,4 +1,3 @@
-# Copyright (c) Shangqi Gao, Fudan University
 import copy
 from typing import Optional, List
 from torch.autograd import Variable
