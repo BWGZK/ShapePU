@@ -29,7 +29,6 @@ Start training with:
 ```
 python main.py
 ```
-If you have any problems, please feel free to contact us. Thanks for your attention.
 
 # Requirements
 
@@ -39,5 +38,4 @@ torch  1.7.0
 torchvision 0.8.0  
 
 
-
-If you have any problems, please feel free to contact us. We will release the trained models as soon as possible. Thanks for your attention.
+If you have any problems, please feel free to contact us. Thanks for your attention.
