@@ -43,46 +43,6 @@ def get_args_parser():
                         help="Path to the pretrained model. If set, only the mask head will be trained")
     parser.add_argument('--in_channels', default=1, type=int)
     
-    # * position emdedding
-    parser.add_argument('--position_embedding', default='learned', type=str, choices=('sine', 'learned'),
-                        help="Type of positional embedding to use on top of the image features")
-
-    # * heads and tails
-    parser.add_argument('--num_pool', default=4, type=int,
-                        help="Number of pooling layers"
-                        )
-    parser.add_argument('--return_interm', action='store_true', default=True,
-                        help='whether to return intermediate features'
-                        )
-
-    # * Transformer
-    parser.add_argument('--enc_layers', default=6, type=int,
-                        help="Number of encoding layers in the transformer"
-                        )
-    parser.add_argument('--dec_layers', default=6, type=int,
-                        help="Number of decoding layers in the transformer"
-                        )
-    parser.add_argument('--dim_feedforward', default=2048, type=int,
-                        help="Intermediate size of the feedforward layers in the transformer blocks"
-                        )
-    parser.add_argument('--hidden_dim', default=256, type=int,
-                        help="Size of the embeddings (dimension of the transformer)"
-                        )
-    parser.add_argument('--embedding_size', default=16, type=int,
-                        help='size of embeddings projected by head module'
-                        )
-    parser.add_argument('--patch_size', default=4, type=int,
-                        help='size of cropped small patch'
-                        )
-    parser.add_argument('--num_queries', default=256, type=int,
-                        help="Number of query slots"
-                        )
-    parser.add_argument('--dropout', default=0.5, type=float,
-                        help="Dropout applied in the transformer")
-    parser.add_argument('--nheads', default=8, type=int,
-                        help="Number of attention heads inside the transformer's attentions")
-    parser.add_argument('--pre_norm', action='store_true', default = True)
-
     # * Loss coefficients
     parser.add_argument('--multiDice_loss_coef', default=0, type=float)
     parser.add_argument('--CrossEntropy_loss_coef', default=1, type=float)
@@ -90,8 +50,8 @@ def get_args_parser():
     parser.add_argument('--Lv', default=1, type=float)
     parser.add_argument('--Myo', default=1, type=float)
     parser.add_argument('--Avg', default=1, type=float)
-    # dataset parameters
     
+    # dataset parameters
     parser.add_argument('--dataset', default='MSCMR_dataset', type=str,
                         help='multi-sequence CMR segmentation dataset')
     parser.add_argument('--output_dir', default='/data/zhangke/MSCMR_ShapePU/',
