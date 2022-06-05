@@ -63,7 +63,7 @@ def get_args_parser():
     parser.add_argument('--resume', default='', help='resume from checkpoint')
     parser.add_argument('--start_epoch', default=0, type=int, metavar='N',
                         help='start epoch')
-    parser.add_argument('--eval', default = False, action='evaluate the model on TestSet')
+    parser.add_argument('--eval', default = False, action='store_true', help = "evaluate the performance on test set")
     parser.add_argument('--num_workers', default=0, type=int)
 
     # distributed training parameters
