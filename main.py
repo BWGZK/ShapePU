@@ -1,6 +1,3 @@
-"""
-This is based on DETR, https://github.com/facebookresearch/detr
-"""
 import os
 import argparse
 import datetime
