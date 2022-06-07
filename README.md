@@ -1,5 +1,5 @@
 # ShapePU
-This project is developed for our MICCAI 2022 paper: ShapePU: A New PU Learning Framework  Regularized by Global Consistency for Scribble Supervised Cardiac Segmentation.
+This project is developed for our MICCAI 2022 paper: [ShapePU: A New PU Learning Framework Regularized by Global Consistency for Scribble Supervised Cardiac Segmentation](https://arxiv.org/abs/2206.02118).
 <div align=center><img src="ShapePU.png" width="85%" /></div>
 
 # Datasets
