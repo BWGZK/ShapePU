@@ -1,6 +1,18 @@
 # ShapePU
 This project is developed for our MICCAI 2022 paper: [ShapePU: A New PU Learning Framework Regularized by Global Consistency for Scribble Supervised Cardiac Segmentation](https://arxiv.org/abs/2206.02118).
 <div align=center><img src="ShapePU.png" width="85%" /></div>
+For more information about ShapePU, please read the following paper:
+```
+@misc{zhang2022shapepu,
+    title={ShapePU: A New PU Learning Framework Regularized by Global Consistency for Scribble Supervised Cardiac Segmentation},
+    author={Ke Zhang and Xiahai Zhuang},
+    year={2022},
+    eprint={2206.02118},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+```
+Please also cite this paper if you are using ShapePU for your research.
 
 # Datasets
 1. The MSCMR dataset with mask annotations can be downloaded from [MSCMRseg](https://zmiclab.github.io/zxh/0/mscmrseg19/data.html).
