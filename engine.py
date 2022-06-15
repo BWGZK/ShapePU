@@ -453,10 +453,5 @@ def evaluate(model, criterion, postprocessors, dataloader_dict, device, output_d
     writer.add_scalar('avg_DSC', stats['Avg'], epoch)
     writer.add_scalar('avg_loss', stats['loss_CrossEntropy'], epoch)
     visualizer(torch.stack(sample_list), torch.stack(output_list), torch.stack(target_list), epoch, writer)
-
-    f = open("/home/zhangke/EM_dice.txt","a")
-    f.write("epoch"+str(epoch)+",Avg:"+str(stats["Avg"])+",Lv:"+str(stats["Lv"])+",Rv:"+str(stats["Rv"])+",Myo:"+str(stats["Myo"]))
-    f.write("\r\n")
-    f.close()
     
     return stats
